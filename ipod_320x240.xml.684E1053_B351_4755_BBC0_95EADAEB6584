@@ -29,6 +29,7 @@
 				</Input>
 				<Output>
 					<MediaType dt:dt="ui4">262144</MediaType>
+				
 					<InsertColorSpace dt:dt="boolean">1</InsertColorSpace>
 					<AudioCodec>
 						<EncoderCLSID dt:dt="string">{4A55EEDA-7CC1-4584-BA0F-C07A8586369F}</EncoderCLSID>
