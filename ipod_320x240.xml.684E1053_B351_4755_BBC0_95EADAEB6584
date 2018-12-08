@@ -1,0 +1,89 @@
+<?xml version="1.0"?> 
+<Root xmlns:dt="urn:schemas-microsoft-com:datatypes">
+		<Template>
+			<GUID dt:dt="string">{42BDF012-1675-44a1-B907-B5EBD8EFE4ED}</GUID>
+			<Name dt:dt="string">iPod AVC/AAC 320x240 HQ</Name>
+			<Description dt:dt="string"/>
+			<FilterInfo>
+				<BaseType dt:dt="i4">262144</BaseType>
+				<PurposeType dt:dt="i4">0</PurposeType>
+				<QualityType dt:dt="i4">0</QualityType>
+				<VideoStandardType dt:dt="i4">0</VideoStandardType>
+				<AspectRatio dt:dt="ui4">196612</AspectRatio>
+			</FilterInfo>
+			<ConfigData>
+				<Input>
+					<Audio>
+						<SamplesPerSec dt:dt="ui4">48000</SamplesPerSec>
+						<BitsPerSample dt:dt="ui2">16</BitsPerSample>
+						<Channels dt:dt="ui2">2</Channels>
+					</Audio>
+					<Video>
+						<!--PixelFormat dt:dt="string">{E436EB7D-524F-11CE-9F53-0020AF0BA770}</PixelFormat-->
+						<FrameSize>
+							<cx dt:dt="i4">320</cx>
+							<cy dt:dt="i4">240</cy>
+						</FrameSize>
+						<FrameRate dt:dt="r8">29.97</FrameRate>
+					</Video>
+				</Input>
+				<Output>
+					<MediaType dt:dt="ui4">262144</MediaType>
+					<InsertColorSpace dt:dt="boolean">1</InsertColorSpace>
+					<AudioCodec>
+						<EncoderCLSID dt:dt="string">{4A55EEDA-7CC1-4584-BA0F-C07A8586369F}</EncoderCLSID>
+						<StrID dt:dt="string">Sonic AAC Encoder</StrID>
+						<BitRate dt:dt="ui4">128</BitRate>
+						<MaxBitRate dt:dt="ui4">160</MaxBitRate>
+						<SampleRate dt:dt="ui4">48000</SampleRate>
+						<H264_HeadType dt:dt="ui4">0</H264_HeadType>
+						<!--AAC_HEADER_RAW-->
+						<H264_MPEGVersion dt:dt="ui4">0</H264_MPEGVersion>
+						<!--AAC_MPEG_4-->
+						<H264_ObjType dt:dt="ui4">1</H264_ObjType>
+						<!--AAC_LC-->
+						<H264_HFCutOff dt:dt="ui4">0</H264_HFCutOff>
+						<!--AAC_CUTOFF_DEFAULT-->
+						<H264_VBR dt:dt="ui4">0</H264_VBR>
+						<!--AAC_VBR_NOTUSED-->
+					</AudioCodec>
+					<VideoCodec>
+						<EncoderCLSID dt:dt="string">{C8184E0E-07F2-41b4-B8DC-ED84EE97D51A}</EncoderCLSID>
+						<StrID dt:dt="string">Sonic Solutions AVC/H.264 Video Encoder</StrID>
+						<H264>
+							<Profile dt:dt="ui4">1</Profile>
+							<!--H264PROFILE_MAIN/H264VE::Profile_Main-->
+							<VideoType dt:dt="ui4">13</VideoType>
+							<!--H264_IPOD/H264VE::VideoType_iPod-->
+							<PullDownFlag dt:dt="ui4">0</PullDownFlag>
+							<!--VIDEO_PULLDOWN_NONE-->
+							<Interlace dt:dt="ui4">0</Interlace>
+							<!--H264_PROGRESSIVE or H264_INTERLACED-->
+							<InterlaceOption dt:dt="ui4">0</InterlaceOption>
+							<!-- 1 EM2VE_TopFirst, 0 BootmFirst-->
+							<RDOptimization dt:dt="ui4">0</RDOptimization>
+							<!---->
+							<FastIntraDec dt:dt="ui4">1</FastIntraDec>
+							<!-- TRUE -->
+							<FastInterDec dt:dt="ui4">1</FastInterDec>
+							<!--TRUE -->
+							<BitRateMode dt:dt="ui4">2</BitRateMode>
+							<!--H264_VBR // H264VE::BitRateMode_VBR -->
+							<BitRate dt:dt="i4">600</BitRate>
+							<!--if 0, use above quantization parameters -->
+							<MaxBitRate dt:dt="i4">768</MaxBitRate>
+							<!--768 for iPod -->
+							<GOPSize dt:dt="i4">50</GOPSize>
+							<!-- -->
+							<VideoFormat dt:dt="ui4">0</VideoFormat>
+							<!-- H264VE::VideoFormat_Auto-->
+						</H264>
+					</VideoCodec>
+					<Muxer>
+						<VideoType dt:dt="ui4">13</VideoType>
+						<!--H264_IPOD/H264VE::VideoType_iPod-->
+					</Muxer>
+				</Output>
+			</ConfigData>
+		</Template>
+</Root>
